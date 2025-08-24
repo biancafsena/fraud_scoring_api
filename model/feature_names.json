@@ -1,0 +1,15 @@
+[
+  "amount",
+  "merchant_risk_score",
+  "device_trust_score",
+  "hour",
+  "user_txn_24h",
+  "channel_APP",
+  "channel_CARD",
+  "channel_PIX",
+  "channel_WEB",
+  "country_AR",
+  "country_BR",
+  "country_CL",
+  "country_MX"
+]
