@@ -10,6 +10,25 @@
 
 ---
 
+## Objetivo
+
+Reestruturar o README do projeto para melhorar a documentação técnica e apresentar com mais clareza o problema de negócio relacionado à detecção de fraude.
+
+## Alterações
+
+- Adição da visão geral do projeto;
+- Documentação do problema de negócio;
+- Inclusão da arquitetura da solução;
+- Detalhamento das variáveis utilizadas;
+- Melhoria das instruções de instalação e execução;
+- Inclusão de exemplos de requisição e resposta;
+- Documentação das limitações;
+- Criação do roadmap de evolução;
+- Inclusão de orientações de segurança e privacidade.
+
+---
+
+
 ## 📌 Visão geral
 
 Instituições financeiras precisam avaliar grandes volumes de transações em pouco tempo, equilibrando a identificação de possíveis fraudes com a redução de bloqueios indevidos de clientes legítimos.
