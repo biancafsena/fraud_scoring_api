@@ -370,15 +370,24 @@ A probabilidade exata depende do modelo treinado e dos dados sintéticos gerados
 }
 ```
 
-### Interpretação
 
-Neste exemplo:
+### Interpretação da resposta
 
-- A probabilidade estimada de fraude foi de aproximadamente `87%`;
-- Como o resultado ficou acima do threshold de `0.5`, a transação foi classificada como possível fraude;
-- Em uma aplicação real, essa saída poderia alimentar uma fila de análise, uma etapa adicional de autenticação ou uma decisão automatizada.
+- `fraud_probability`: probabilidade estimada de a transação apresentar comportamento fraudulento;
+- `is_fraud`: classificação final calculada com base no threshold definido pelo modelo;
+- Valores mais próximos de `1` representam maior risco estimado;
+- O threshold padrão utilizado nesta versão é `0.5`.
 
-> O resultado acima é apenas demonstrativo e não representa uma transação bancária real.
+Neste exemplo, a transação recebeu uma probabilidade estimada de fraude de `87%`. Como o valor ficou acima do threshold de `0.5`, ela foi classificada como uma possível fraude.
+
+Em um cenário produtivo, essa resposta poderia ser utilizada para:
+
+- Aprovar automaticamente transações de baixo risco;
+- Solicitar autenticação adicional em casos intermediários;
+- Encaminhar transações de alto risco para análise;
+- Bloquear temporariamente operações críticas.
+
+> A classificação é demonstrativa e utiliza dados sintéticos. O resultado não deve ser utilizado para decisões financeiras reais.
 
 ---
 
